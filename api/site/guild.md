@@ -58,6 +58,31 @@ ID сервера
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% hint style="info" %}
+Если вы хотите проверить, есть ли значок **Разработчик Сайта**, всё что нужно сделать - это использовать побитовый оператор.
+{% endhint %}
+
+```javascript
+const status = 40;
+status & 8   //True (Разработчик сайта)
+status & 10  //False (Фаворитка)
+status & 20  //True (Баг хантер)
+```
+
+{% code-tabs %}
+{% code-tabs-item title="Информация о статусах" %}
+```javascript
+botdev: 0x1
+partner: 0x2
+verefied: 0x4
+sitedev: 0x8
+favorite: 0x10
+bughunter: 0x20
+easteregg: 0x40
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
 {% api-method method="get" host="https://api.server-discord.com" path="/guild/:id/place" %}
 {% api-method-summary %}
 Get place
