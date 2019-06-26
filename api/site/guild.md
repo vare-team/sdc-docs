@@ -48,7 +48,6 @@ ID сервера
   "bot":1,
   "boost":3,
   "status":8,
-  "color":"#53cca8",
   "upCount":299,
   "tags":"communication,programming,community"
 }
