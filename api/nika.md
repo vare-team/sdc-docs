@@ -4,10 +4,6 @@ description: Публичный чёрный список ID спамеров и
 
 # SDC Blacklist
 
-{% hint style="info" %}
-Если не добавлять ID к запросу, то вернутся данные о сервере, на котором был сгенерирован ключ!
-{% endhint %}
-
 {% api-method method="get" host="https://api.server-discord.com" path="/warns/:id" %}
 {% api-method-summary %}
 Get warns
