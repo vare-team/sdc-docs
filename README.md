@@ -12,5 +12,5 @@ description: Лимб. Все дороги ведут отсюда.
 
 ## Библиотеки для работы с SD.C API
 
-1. [sdc-wrapper](https://npmjs.com/package/sdc-wrapper) \| Node JS _\(By_ [_vladciphersky\#6666_](http://cp.sqdsh.top/)_**\)**_
+1. [sdc-wrapper](https://npmjs.com/package/sdc-wrapper) \| Node JS _\(By_ [_vladciphersky\#6666_](http://sqdsh.top/)_**\)**_
 
