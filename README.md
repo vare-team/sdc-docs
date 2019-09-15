@@ -12,7 +12,7 @@ description: Лимб. Все дороги ведут отсюда.
 
 ## Библиотеки для работы с SD.C API
 
-1. [sdc-wrapper](https://npmjs.com/package/sdc-wrapper) \| Node JS _\(By_ [_vladciphersky\#6666_](http://sqdsh.top/)_\)_
+1. [sdc-api](https://npmjs.com/package/sdc-api) \| Node JS _\(By_ [_SDC_](https://sdc.su/)_\)_
 2. [sdc-api](https://pypi.org/project/sdc-api/) \| Python _\(By Pineapple\_Cookie \(美波🌊 fan\)\#0373\)_
 
 
