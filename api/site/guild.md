@@ -36,9 +36,8 @@ ID сервера
 
 ```javascript
 {
-  "avatar":"https://cdn.discordapp.com/icons/464270024518008863/ad570812a5408afac56ec58ffbf553d8.jpg",
+  "avatar":"a_8f05534e4f750cf535988ae8a91fe9ad",
   "lang":"ru",
-  "rating":100,
   "name":"SD.Community",
   "des":"Описание сервера",
   "invite":"https://discord.gg/GWTcywt",
