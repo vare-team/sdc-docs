@@ -4,7 +4,7 @@
 Если не добавлять ID к запросу, то вернутся данные о сервере, на котором был сгенерирован ключ!
 {% endhint %}
 
-{% api-method method="get" host="https://api.server-discord.com" path="/guild/:id" %}
+{% api-method method="get" host="https://api.server-discord.com/v1" path="/guild/:id" %}
 {% api-method-summary %}
 Get guild
 {% endapi-method-summary %}
@@ -36,19 +36,19 @@ ID сервера
 
 ```javascript
 {
-  "avatar":"a_8f05534e4f750cf535988ae8a91fe9ad",
-  "lang":"ru",
-  "name":"SD.Community",
-  "des":"Описание сервера",
-  "invite":"https://discord.gg/GWTcywt",
-  "owner":"MegaVasiliy007#3301",
-  "online":250,
-  "members":500,
-  "bot":1,
-  "boost":3,
-  "status":8,
-  "upCount":299,
-  "tags":"communication,programming,community"
+  "avatar": "a_8f05534e4f750cf535988ae8a91fe9ad",
+  "lang": "ru",
+  "name": "SD.Community",
+  "des": "Описание сервера",
+  "invite": "https://discord.gg/GWTcywt",
+  "owner": "MegaVasiliy007#3301",
+  "online": 250,
+  "members": 500,
+  "bot": 1,
+  "boost": 3,
+  "status": 8,
+  "upCount": 299,
+  "tags": "communication,programming,community"
 }
 ```
 {% endapi-method-response-example %}
@@ -81,7 +81,7 @@ easteregg: 0x40
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-{% api-method method="get" host="https://api.server-discord.com" path="/guild/:id/place" %}
+{% api-method method="get" host="https://api.server-discord.com/v1" path="/guild/:id/place" %}
 {% api-method-summary %}
 Get place
 {% endapi-method-summary %}
@@ -121,7 +121,7 @@ ID сервера
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="https://api.server-discord.com" path="/guild/:id/rated" %}
+{% api-method method="get" host="https://api.server-discord.com/v1" path="/guild/:id/rated" %}
 {% api-method-summary %}
 Get rated
 {% endapi-method-summary %}
@@ -153,10 +153,10 @@ ID сервера
 
 ```javascript
 {
-    "000000000000000000":1,
-    "111111111111111111":1,
-    "222222222222222222":1,
-    "333333333333333333":1
+    "000000000000000000": 1,
+    "111111111111111111": 1,
+    "222222222222222222": 1,
+    "333333333333333333": 1
 }
 ```
 {% endapi-method-response-example %}

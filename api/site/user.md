@@ -1,6 +1,6 @@
 # User
 
-{% api-method method="get" host="https://api.server-discord.com" path="/user/:id/rated" %}
+{% api-method method="get" host="https://api.server-discord.com/v1" path="/user/:id/rated" %}
 {% api-method-summary %}
 Get rated servers
 {% endapi-method-summary %}
@@ -32,10 +32,10 @@ ID пользователя
 
 ```javascript
 {
-    "000000000000000000":1,
-    "111111111111111111":1,
-    "222222222222222222":1,
-    "333333333333333333":1
+    "000000000000000000": 1,
+    "111111111111111111": 1,
+    "222222222222222222": 1,
+    "333333333333333333": 1
 }
 ```
 {% endapi-method-response-example %}
