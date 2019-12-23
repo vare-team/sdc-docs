@@ -4,7 +4,7 @@ description: Публичный чёрный список ID спамеров и
 
 # SDC Blacklist
 
-{% api-method method="get" host="https://api.server-discord.com/v1" path="/warns/:id" %}
+{% api-method method="get" host="https://api.server-discord.com/v2" path="/warns/:id" %}
 {% api-method-summary %}
 Get warns
 {% endapi-method-summary %}
@@ -21,11 +21,11 @@ ID
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
-{% api-method-query-parameters %}
-{% api-method-parameter name="dKey" type="string" required=true %}
-Ключ разработчика
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+SDC Token
 {% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
+{% endapi-method-headers %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -45,6 +45,4 @@ ID
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-
 

@@ -4,7 +4,7 @@
 Если не добавлять ID к запросу, то вернутся данные о сервере, на котором был сгенерирован ключ!
 {% endhint %}
 
-{% api-method method="get" host="https://api.server-discord.com/v1" path="/guild/:id" %}
+{% api-method method="get" host="https://api.server-discord.com/v2" path="/guild/:id" %}
 {% api-method-summary %}
 Get guild
 {% endapi-method-summary %}
@@ -16,16 +16,16 @@ Get guild
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="id" type="string" required=false %}
+{% api-method-parameter name="id" type="string" required=true %}
 ID сервера
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
-{% api-method-query-parameters %}
-{% api-method-parameter name="dKey" type="string" required=true %}
-Ключ разработчика
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+SDC Token
 {% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
+{% endapi-method-headers %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -57,31 +57,34 @@ ID сервера
 {% endapi-method %}
 
 {% hint style="info" %}
-Если вы хотите проверить, есть ли значок **Разработчик Сайта**, всё что нужно сделать - это использовать побитовый оператор.
+Если вы хотите проверить, есть ли значок **Пасхантер**, всё что нужно сделать - это использовать побитовый оператор.
 {% endhint %}
 
 ```javascript
 const status = 40;
-status & 8   //True (Разработчик сайта)
-status & 10  //False (Фаворитка)
-status & 20  //True (Баг хантер)
+status & 8   //True (Фаротика)
+status & 10  //False (Баг хантер)
+status & 20  //True (Пасхантер)
 ```
 
-{% code-tabs %}
-{% code-tabs-item title="Информация о статусах" %}
+{% tabs %}
+{% tab title="Информация о статусах" %}
 ```javascript
-botdev: 0x1
-partner: 0x2
-verefied: 0x4
-sitedev: 0x8
-favorite: 0x10
-bughunter: 0x20
-easteregg: 0x40
+sitedev: 0x1
+verefied: 0x2
+partner: 0x4
+favorite 0x8
+bughunter: 0x10
+easteregg: 0x20
+botdev: 0x40
+youtube: 0x80
+twitch: 0x100
+spamhunt: 0x200
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
-{% api-method method="get" host="https://api.server-discord.com/v1" path="/guild/:id/place" %}
+{% api-method method="get" host="https://api.server-discord.com/v2" path="/guild/:id/place" %}
 {% api-method-summary %}
 Get place
 {% endapi-method-summary %}
@@ -93,16 +96,16 @@ Get place
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="id" type="string" required=false %}
+{% api-method-parameter name="id" type="string" required=true %}
 ID сервера
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
-{% api-method-query-parameters %}
-{% api-method-parameter name="dKey" type="string" required=true %}
-Ключ разработчика
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+SDC Token
 {% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
+{% endapi-method-headers %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -121,7 +124,7 @@ ID сервера
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="https://api.server-discord.com/v1" path="/guild/:id/rated" %}
+{% api-method method="get" host="https://api.server-discord.com/v2" path="/guild/:id/rated" %}
 {% api-method-summary %}
 Get rated
 {% endapi-method-summary %}
@@ -133,16 +136,16 @@ Get rated
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="id" type="string" required=false %}
+{% api-method-parameter name="id" type="string" required=true %}
 ID сервера
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
-{% api-method-query-parameters %}
-{% api-method-parameter name="dKey" type="string" required=true %}
-Ключ разработчика
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+SDC Token
 {% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
+{% endapi-method-headers %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -163,4 +166,6 @@ ID сервера
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+
 
