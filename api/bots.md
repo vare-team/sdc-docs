@@ -22,7 +22,7 @@ Bot ID
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
-{% api-method-parameter name="Authentication" type="string" required=true %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
 SDC Token
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
