@@ -14,3 +14,4 @@ description: Лимб. Все дороги ведут отсюда.
 
 1. [sdc-api](https://github.com/MegaVasiliy007/sdc-api) \| NodeJS _\(By_ [_SDC_](https://sdc.su/)_\)_
 2. [sdc-type](https://github.com/sqdshcom/sdc-type) \| TypeScript _\(By_ [_Sqdsh.Community_](https://github.com/sqdshcom/)_\)_
+3. [sdc-api](https://pypi.org/project/sdc-api/) \| Python _\(By Pineapple\_Cookie \(美波🌊 fan\)\#0373\)_
