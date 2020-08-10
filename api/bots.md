@@ -28,11 +28,11 @@ SDC Token
 {% endapi-method-headers %}
 
 {% api-method-form-data-parameters %}
-{% api-method-parameter name="shards" type="number" required=false %}
+{% api-method-parameter name="shards" type="number" required=true %}
 Количество шардов
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="servers" type="number" required=false %}
+{% api-method-parameter name="servers" type="number" required=true %}
 Количество серверов
 {% endapi-method-parameter %}
 {% endapi-method-form-data-parameters %}
@@ -45,12 +45,31 @@ SDC Token
 {% endapi-method-response-example-description %}
 
 ```
-
+{
+  "status": true
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% api-method-response %}
+{% api-method-response-example httpCode=404 %}
+{% api-method-response-example-description %}
+Отправлен не POST запрос
+{% endapi-method-response-example-description %}
 
-
+```
+{
+  "error": {
+    "msg": "Page not found",
+    "type":"NOT FOUND",
+    "code":404
+  }
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}                                                                                                 
