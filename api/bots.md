@@ -63,7 +63,7 @@ SDC Token
 ```
 {
   "error": {
-    "msg": "b2aa2ba2bba2ba2b QmxhY2tob2xlaXNkYXJrIHBvbnkuIHNhdmV3b3JsZA==", // прим. Переводится как: b2aa2ba2bba2ba2b Blackholeisdark pony. saveworld
+    "msg": "b2aa2ba2bba2ba2b QmxhY2tob2xlaXNkYXJrIHBvbnkuIHNhdmV3b3JsZA==",
     "type":"NOT FOUND",
     "code":404
   }
