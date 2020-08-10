@@ -63,7 +63,7 @@ SDC Token
 ```
 {
   "error": {
-    "msg": "b2aa2ba2bba2ba2b QmxhY2tob2xlaXNkYXJrIHBvbnkuIHNhdmV3b3JsZA==",
+    "msg": "Page not found",
     "type":"NOT FOUND",
     "code":404
   }
