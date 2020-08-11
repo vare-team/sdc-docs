@@ -50,11 +50,7 @@ SDC Token
 }
 ```
 {% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
 
-{% api-method-response %}
 {% api-method-response-example httpCode=404 %}
 {% api-method-response-example-description %}
 Отправлен не POST запрос
@@ -64,12 +60,14 @@ SDC Token
 {
   "error": {
     "msg": "Page not found",
-    "type":"NOT FOUND",
-    "code":404
+    "type": "NOT FOUND",
+    "code": 404
   }
 }
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
+
 {% endapi-method-spec %}
-{% endapi-method %}                                                                                                 
+
+{% endapi-method %}
