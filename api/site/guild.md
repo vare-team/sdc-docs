@@ -63,8 +63,8 @@ SDC Token
 ```javascript
 const status = 40;
 status & 8   //True (Фаротика)
-status & 10  //False (Баг хантер)
-status & 20  //True (Пасхантер)
+status & 16  //False (Баг хантер)
+status & 32  //True (Пасхантер)
 ```
 
 {% tabs %}
