@@ -63,23 +63,23 @@ SDC Token
 ```javascript
 const status = 40;
 status & 8   //True (Фаротика)
-status & 10  //False (Баг хантер)
-status & 20  //True (Пасхантер)
+status & 16  //False (Баг хантер)
+status & 32  //True (Пасхантер)
 ```
 
 {% tabs %}
 {% tab title="Информация о статусах" %}
 ```javascript
-sitedev: 0x1
-verefied: 0x2
-partner: 0x4
-favorite 0x8
-bughunter: 0x10
-easteregg: 0x20
-botdev: 0x40
-youtube: 0x80
-twitch: 0x100
-spamhunt: 0x200
+sitedev: 1
+verefied: 2
+partner: 4
+favorite 8
+bughunter: 16
+easteregg: 32
+botdev: 64
+youtube: 128
+twitch: 256
+spamhunt: 512
 ```
 {% endtab %}
 {% endtabs %}
@@ -156,6 +156,8 @@ SDC Token
 
 ```javascript
 {
+    //1: Положительная оценка. 
+    //-1: Отрицательная оценка.
     "000000000000000000": 1,
     "111111111111111111": 1,
     "222222222222222222": 1,
