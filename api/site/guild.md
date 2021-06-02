@@ -36,7 +36,7 @@ SDC Token
 
 ```javascript
 {
-  "avatar": "a_8f05534e4f750cf535988ae8a91fe9ad",
+  "avatar": "a_8f05534e4f750cf535988ae8a91fe9ad", // Хэш аватарки. Подробнее на https://discord.com/developers/docs/reference#image-formatting
   "lang": "ru",
   "name": "SD.Community",
   "des": "Описание сервера",
@@ -44,7 +44,7 @@ SDC Token
   "owner": "MegaVasiliy007#3301",
   "online": 250,
   "members": 500,
-  "bot": 1,
+  "bot": 1,                                       // Присутствует ли бот SD.C Monitoring#9896 на сервере.
   "boost": 3,
   "status": 8,
   "upCount": 299,
