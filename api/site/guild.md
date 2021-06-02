@@ -1,9 +1,5 @@
 # Guild
 
-{% hint style="info" %}
-Если не добавлять ID к запросу, то вернутся данные о сервере, на котором был сгенерирован ключ!
-{% endhint %}
-
 {% api-method method="get" host="https://api.server-discord.com/v2" path="/guild/:id" %}
 {% api-method-summary %}
 Get guild
