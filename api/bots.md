@@ -13,6 +13,12 @@ Send bot data
 
 {% endapi-method-description %}
 
+### Ограничения
+
+{% hint style="danger" %}
+Вы не можете делать больше 2 запросов за 1 минуту.
+{% endhint %}
+
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
