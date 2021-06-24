@@ -9,6 +9,12 @@ description: Отправка данных о количестве сервер�
 Send bot data
 {% endapi-method-summary %}
 
+### Ограничения
+
+{% hint style="danger" %}
+Вы не можете делать больше 2 запросов за 1 минуту.
+{% endhint %}
+
 {% api-method-description %}
 
 {% endapi-method-description %}
