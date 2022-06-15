@@ -4,33 +4,33 @@ description: Отправка данных о количестве сервер�
 
 # SDC Bots
 
-{% api-method baseUrl="https://api.server-discord.com/v2" method="post" path="/bots/:id/stats" summary="Send bot data" %}
+{% api baseUrl="https://api.server-discord.com/v2" method="post" path="/bots/:id/stats" summary="Send bot data" %}
 
-{% api-method-parameter in="path" name="id" type="string" required="true" %}
+{% api-parameter in="path" name="id" type="string" required="true" %}
 Bot ID
-{% endapi-method-parameter %}
+{% endapi-parameter %}
 
-{% api-method-parameter in="header" name="Authorization" type="string" required="true" %}
+{% api-parameter in="header" name="Authorization" type="string" required="true" %}
 SDC Token
-{% endapi-method-parameter %}
+{% endapi-parameter %}
 
-{% api-method-parameter in="body" name="shards" type="number" required="true" %}
+{% api-parameter in="body" name="shards" type="number" required="true" %}
 Количество шардов, не менее 1
-{% endapi-method-parameter %}
+{% endapi-parameter %}
 
-{% api-method-parameter in="body" name="servers" type="number" required="true" %}
+{% api-parameter in="body" name="servers" type="number" required="true" %}
 Количество серверов, не менее 1
-{% endapi-method-parameter %}
+{% endapi-parameter %}
 
-{% api-method-response status="200" description="Данные успешно установлены" %}
+{% api-response status="200" description="Данные успешно установлены" %}
 ```javascript
 {
   "status": true
 }
 ```
-{% endapi-method-response %}
+{% endapi-response %}
 
-{% api-method-response status="404" description="Формат ошибок" %}
+{% api-response status="404" description="Формат ошибок" %}
 ```javascript
 {
   "error": {
@@ -40,9 +40,9 @@ SDC Token
   }
 }
 ```
-{% endapi-method-response %}
+{% endapi-response %}
 
-{% endapi-method %}
+{% endapi %}
 
 ### Ограничения
 
