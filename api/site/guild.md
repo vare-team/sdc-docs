@@ -58,24 +58,24 @@ SDC Token
 
 ```javascript
 const status = 40;
-status & 8   //True (Фаротика)
-status & 16  //False (Баг хантер)
-status & 32  //True (Пасхантер)
+status & 8    //  True  (Фаворитика)
+status & 16   //  False (Баг хантер)
+status & 32   //  True  (Пасхантер)
 ```
 
 {% tabs %}
 {% tab title="Информация о статусах" %}
 ```javascript
-sitedev: 1
-verefied: 2
-partner: 4
-favorite 8
-bughunter: 16
-easteregg: 32
-botdev: 64
-youtube: 128
-twitch: 256
-spamhunt: 512
+sitedev     1
+verefied    2
+partner     4
+favorite    8
+bughunter   16
+easteregg   32
+botdev      64
+youtube     128
+twitch      256
+spamhunt    512
 ```
 {% endtab %}
 {% endtabs %}
