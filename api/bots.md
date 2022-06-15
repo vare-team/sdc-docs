@@ -4,33 +4,36 @@ description: Отправка данных о количестве сервер�
 
 # SDC Bots
 
-{% botsapi host="https://api.server-discord.com/v2" method="post" path="/bots/:id/stats" summary="Send bot data" %}
+{% swagger method="post" path="/bots/:id/stats" baseUrl="https://api.server-discord.com/v2" summary="Send bot data" %}
+{% swagger-description %}
 
-{% botsapi-parameter in="path" name="id" type="string" required="true" %}
-Bot ID
-{% endbotsapi-parameter %}
+{% endswagger-description %}
 
-{% botsapi-parameter in="header" name="Authorization" type="string" required="true" %}
+{% swagger-parameter in="path" required="true" name="id" type="String" %}
+Айди бота
+{% endswagger-parameter %}
+
+{% swagger-parameter in="header" name="Authorization" required="true" type="String" %}
 SDC Token
-{% endbotsapi-parameter %}
+{% endswagger-parameter %}
 
-{% botsapi-parameter in="body" name="shards" type="number" required="true" %}
+{% swagger-parameter in="body" required="true" name="servers" type="Number" %}
 Количество шардов, не менее 1
-{% endbotsapi-parameter %}
+{% endswagger-parameter %}
 
-{% botsapi-parameter in="body" name="servers" type="number" required="true" %}
+{% swagger-parameter in="body" required="true" name="shards" type="Number" %}
 Количество серверов, не менее 1
-{% endbotsapi-parameter %}
+{% endswagger-parameter %}
 
-{% botsapi-response status="200" description="Данные успешно установлены" %}
+{% swagger-response status="200: OK" description="Данные успешно установлены" %}
 ```javascript
 {
   "status": true
 }
 ```
-{% endbotsapi-response %}
+{% endswagger-response %}
 
-{% botsapi-response status="404" description="Формат ошибок" %}
+{% swagger-response status="400: Bad Request" description="Формат ошибок" %}
 ```javascript
 {
   "error": {
@@ -40,9 +43,8 @@ SDC Token
   }
 }
 ```
-{% endbotsapi-response %}
-
-{% endbotsapi %}
+{% endswagger-response %}
+{% endswagger %}
 
 ### Ограничения
 
