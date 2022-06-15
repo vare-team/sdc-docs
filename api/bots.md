@@ -4,7 +4,7 @@ description: Отправка данных о количестве сервер�
 
 # SDC Bots
 
-{% botsapi baseUrl="https://api.server-discord.com/v2" method="post" path="/bots/:id/stats" summary="Send bot data" %}
+{% botsapi host="https://api.server-discord.com/v2" method="post" path="/bots/:id/stats" summary="Send bot data" %}
 
 {% botsapi-parameter in="path" name="id" type="string" required="true" %}
 Bot ID
@@ -36,7 +36,7 @@ SDC Token
   "error": {
     "msg": "Page not found",
     "type": "NOT FOUND",
-    "code", 404
+    "code": 404
   }
 }
 ```
