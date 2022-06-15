@@ -58,24 +58,49 @@ SDC Token
 
 ```javascript
 const status = 40;
-status & 8   //True (Фаротика)
-status & 16  //False (Баг хантер)
-status & 32  //True (Пасхантер)
+status & 8    //  True  (Фаворитика)
+status & 16   //  False (Баг хантер)
+status & 32   //  True  (Пасхантер)
 ```
 
 {% tabs %}
 {% tab title="Информация о статусах" %}
 ```javascript
-sitedev: 1
-verefied: 2
-partner: 4
-favorite 8
-bughunter: 16
-easteregg: 32
-botdev: 64
-youtube: 128
-twitch: 256
-spamhunt: 512
+sitedev     1
+verefied    2
+partner     4
+favorite    8
+bughunter   16
+easteregg   32
+botdev      64
+youtube     128
+twitch      256
+spamhunt    512
+```
+{% endtab %}
+
+{% tab title="Список языков" %}
+```js
+ru, ua, en, all
+```
+{% endtab %}
+{% tab title="Список тегов" %}
+```js
+eighteen        //  18+
+anime           //  Аниме
+games           //  Игры
+art             //  Искусство
+business        //  Бизнес
+music           //  Музыка
+communication   //  Общение
+rp              //  RolePlay
+policy          //  Политика
+programming     //  Программирование
+community       //  Сообщество
+technologies    //  Технологии
+films           //  Фильмы
+humor           //  Юмор
+more            //  Другое
 ```
 {% endtab %}
 {% endtabs %}
