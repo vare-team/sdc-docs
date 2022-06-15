@@ -78,6 +78,31 @@ twitch      256
 spamhunt    512
 ```
 {% endtab %}
+
+{% tab title="Список языков" %}
+```js
+ru, ua, en, all
+```
+{% endtab %}
+{% tab title="Список тегов" %}
+```js
+eighteen        //  18+
+anime           //  Аниме
+games           //  Игры
+art             //  Искусство
+business        //  Бизнес
+music           //  Музыка
+communication   //  Общение
+rp              //  RolePlay
+policy          //  Политика
+programming     //  Программирование
+community       //  Сообщество
+technologies    //  Технологии
+films           //  Фильмы
+humor           //  Юмор
+more            //  Другое
+```
+{% endtab %}
 {% endtabs %}
 
 {% api-method method="get" host="https://api.server-discord.com/v2" path="/guild/:id/place" %}
