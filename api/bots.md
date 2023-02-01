@@ -4,52 +4,47 @@ description: Отправка данных о количестве сервер�
 
 # SDC Bots
 
-{% api-method method="post" host="https://api.server-discord.com/v2" path="/bots/:id/stats" %}
-{% api-method-summary %}
-Send bot data
-{% endapi-method-summary %}
+{% swagger method="post" path="/bots/:id/stats" baseUrl="https://api.server-discord.com/v2" summary="Send bot data" %}
+{% swagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="id" type="string" required=true %}
-Bot ID
-{% endapi-method-parameter %}
+{% endswagger-description %}
 
-{% endapi-method-path-parameters %}
+{% swagger-parameter in="path" required="true" name="id" type="String" %}
+Айди бота
+{% endswagger-parameter %}
 
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
+{% swagger-parameter in="header" name="Authorization" required="true" type="String" %}
 SDC Token
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% endswagger-parameter %}
 
-{% api-method-form-data-parameters %}
-{% api-method-parameter name="shards" type="number" required=true %}
-Количество шардов
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" required="true" name="servers" type="Number" %}
+Количество шардов, не менее 1
+{% endswagger-parameter %}
 
-{% api-method-parameter name="servers" type="number" required=true %}
-Количество серверов
-{% endapi-method-parameter %}
-{% endapi-method-form-data-parameters %}
-{% endapi-method-request %}
+{% swagger-parameter in="body" required="true" name="shards" type="Number" %}
+Количество серверов, не менее 1
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Данные успешно установлены
-{% endapi-method-response-example-description %}
-
-```
+{% swagger-response status="200: OK" description="Данные успешно установлены" %}
+```javascript
 {
   "status": true
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}                                                                                       
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="Формат ошибок" %}
+```javascript
+{
+  "error": {
+    "msg": "Page not found",
+    "type": "NOT FOUND",
+    "code": 404
+  }
+}
+```
+{% endswagger-response %}
+{% endswagger %}
 
 ### Ограничения
 
