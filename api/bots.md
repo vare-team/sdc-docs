@@ -18,11 +18,11 @@ SDC Token
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" required="true" name="servers" type="Number" %}
-Количество шардов, не менее 1
+Количество серверов, не менее 1
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" required="true" name="shards" type="Number" %}
-Количество серверов, не менее 1
+Количество шардов, не менее 1
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Данные успешно установлены" %}
